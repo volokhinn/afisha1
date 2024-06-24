@@ -1,0 +1,172 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/* _________________________________________________________________________________________________ */
+
+
+body {
+  background: rgba(247, 249, 255, 1);
+}
+
+.container {
+  width: 100%;
+  max-width: 1870px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(91, 0, 207, 1);
+}
+
+::-moz-selection {
+  color: #fff;
+  background: rgba(91, 0, 207, 1);
+}
+
+.heroslider.swiper-button-prev, .heroslider.swiper-button-next {
+  transition: .4s ease-in-out;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.heroslider.swiper-button-prev.swiper-button-disabled {
+  transform: translateX(-300px);
+}
+
+.heroslider.swiper-button-next.swiper-button-disabled {
+  transform: translateX(300px);
+}
+
+.heroslider.swiper-button-prev::after, .heroslider.swiper-button-next::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../public/assets/icons/sliderarrow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 300px;
+}
+
+.heroslider.swiper-button-prev::after {
+  transform: rotate(180deg);
+}
+
+.persAccActive {
+  & img {
+    transform: scale(1.25);
+  }
+}
+
+.persAccSlider {
+  min-height: 150px;
+  margin-top: 30px;
+
+  & div {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+
+    & > .swiper-slide {
+      & img {
+        transition: .4s;
+      }
+    }
+
+    & > .swiper-slide.swiper-slide-active {
+      & img {
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+
+.persAccSlide  {
+  margin: auto;
+}

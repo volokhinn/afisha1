@@ -1,0 +1,36 @@
+.title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+    & h2 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+}
+
+.link {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: black;
+
+    & .icon {
+        transition: .2s;
+    }
+
+    &:hover .icon {
+        transform: translateX(10px);
+    }
+}
+
+.events {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    margin-top: 50px;
+}

@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &_left {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+
+    &_right {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+    
+    & a {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: rgba(91, 0, 207, 1);
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 100px;
+}

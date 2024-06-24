@@ -1,0 +1,53 @@
+.wrapper {
+    max-width: 1400px;
+    margin: 75px auto;
+    background: #fff;
+    border-radius: 50px;
+
+    display: flex;
+}
+
+.left {
+    padding: 75px 25px 75px 75px;
+    width: 50%;
+
+    & h2 {
+        font-size: 42px;
+        font-weight: 400;
+    }
+}
+
+.right {
+    overflow: hidden;
+    width: 50%;
+
+    & img {
+        object-fit: cover;
+        object-position: -100%;
+    }
+}
+
+.slider_text {
+    padding: 50px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: rgba(237, 217, 255, 1);
+    color: rgba(136, 0, 255, 1);
+    border-radius: 100px;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    margin: 30px 0;
+}

@@ -1,0 +1,18 @@
+.search {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+    &_input {
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: transparent;
+        &::placeholder {
+            font-size: 20px;
+        }
+        &::-webkit-search-cancel-button {
+            display: none;
+        }
+    }
+}
