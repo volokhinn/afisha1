@@ -24,6 +24,20 @@
         color: black;
         font-weight: 400;
         font-size: 20px;
+
+        &::after {
+            display: block;
+            content: "";
+            height: 3px; 
+            width: 0%; 
+            background-color: rgb(91, 0, 207);
+            transition: width 0.3s ease-in-out;
+            border-radius: 30px;
+        }
+
+        &:hover::after, &:focus::after {
+            width: 100%;
+        }
     }
 }
 

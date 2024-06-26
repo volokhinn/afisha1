@@ -5,8 +5,10 @@ import styles from './Filter.module.scss';
 import Calendar from '@/UI/Calendar/Calendar';
 import SearchForm from '@/UI/SearchForm/SearchForm';
 import Image from 'next/image';
-import eventTypeIcon from '../../../public/assets/icons/thunder.svg';
+import thunderIcon from '../../../public/assets/icons/thunder.svg';
 import childrenIcon from '../../../public/assets/icons/kids.svg';
+import thunderIconSelected from '../../../public/assets/icons/thunderWhite.svg';
+import childrenIconSelected from '../../../public/assets/icons/kidsWhite.svg';
 import sliderarrow from '../../../public/assets/icons/sliderarrow.svg';
 
 const Filter = () => {
@@ -53,7 +55,7 @@ const Filter = () => {
               onChange={() => setIsPosterSelected(!isPosterSelected)}
               className={styles.checkboxInput}
             />
-            <Image src={eventTypeIcon} alt="Выбор афиши" className={styles.icon} />
+            {isPosterSelected ? <Image src={thunderIconSelected} alt="Выбор афиши" className={styles.icon} /> : <Image src={thunderIcon} alt="Выбор афиши" className={styles.icon} />}
             Выбор афиши
           </label>
           <label className={`${styles.checkboxLabel} ${isChildrenSelected ? styles.checked : ''}`}>
@@ -63,7 +65,7 @@ const Filter = () => {
               onChange={() => setIsChildrenSelected(!isChildrenSelected)}
               className={styles.checkboxInput}
             />
-            <Image src={childrenIcon} alt="Детские" className={styles.icon} />
+            {isChildrenSelected ? <Image src={childrenIconSelected} alt="Детские" className={styles.icon} /> : <Image src={childrenIcon} alt="Детские" className={styles.icon} />}
             Детские
           </label>
         </div>

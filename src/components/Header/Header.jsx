@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Header.module.scss';
 
 import Link from 'next/link';
@@ -32,7 +30,7 @@ const Header = () => {
           <SearchForm />
           <Link href="#" className={styles.login}>
             <Image src={loginIcon} alt="login" />
-            Войти
+              Войти
           </Link>
         </div>
       </div>

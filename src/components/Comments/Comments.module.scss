@@ -1,0 +1,32 @@
+.wrapper {
+    max-width: 60%;
+    margin-top: 50px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+
+    & a {
+        padding: 25px;
+        border-radius: 100px;
+    }
+
+    &_accent {
+        background-color: #5B00CF;
+        color: #fff;
+    }
+
+    &_white {
+        background-color: #E4E4E4;
+        color: #000;
+    }
+}

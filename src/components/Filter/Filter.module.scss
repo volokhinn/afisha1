@@ -17,6 +17,7 @@
 .checkboxContainer {
     display: flex;
     gap: 30px;
+    user-select: none;
 }
 .checkboxLabel {
     display: flex;

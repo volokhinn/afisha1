@@ -1,6 +1,7 @@
 'use client';
 import styles from './SectionCard.module.scss';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const SectionCard = ({
   bgImage,
@@ -26,9 +27,9 @@ const SectionCard = ({
           {label}
         </div>
         <div className={styles.content}>
-          <a href={btnLink} className={styles.content_btn}>
+          <Link href={btnLink} className={styles.content_btn}>
             Смотреть событие
-          </a>
+          </Link>
         </div>
       </div>
       <h3 className={styles.content_title}>{contentTitle}</h3>

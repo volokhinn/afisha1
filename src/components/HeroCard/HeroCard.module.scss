@@ -50,5 +50,10 @@
         width: fit-content;
         background-color: #fff;
         color: #000;
+        transition: .3s;
+
+        &:hover {
+            background-color: rgba(233,233,233,1);
+        }
     }
 }

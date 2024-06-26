@@ -3,6 +3,7 @@ import Image from 'next/image';
 import events from '../../../public/assets/events.png';
 import PersAccSectionSlider from './PersAccSectionSlider/PersAccSectionSlider';
 import Link from 'next/link';
+import Title from '@/UI/Title/Title';
 
 const PersAccSection = () => {
   return (
